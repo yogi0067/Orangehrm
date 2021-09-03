@@ -28,6 +28,7 @@ import pageObjects.MainLoginPage;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 import utilites.BaseClass;
+import utilites.DataClass;
 import utilites.ExcelOperations;
 
 public class MainLoginTest extends BaseClass {
@@ -48,7 +49,7 @@ public class MainLoginTest extends BaseClass {
 	public void launchBrowser() throws IOException {
 		driver = initilizeDriver();
 		
-		driver.get(getProperty("url"));
+		driver.get(getProperty(DataClass.url));
 		mlpo = new MainLoginPage(driver);
 		hppo= new HomePage(driver);
 		wait= new WebDriverWait(driver, 20);
