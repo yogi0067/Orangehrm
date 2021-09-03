@@ -14,7 +14,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -56,7 +55,7 @@ public class BaseClass {
 		try {
 			FileUtils.copyFile(screenhost, new File(System.getProperty("user.dir") + "\\test-output\\screenShots\\"+fileName+".png"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		
 			e.printStackTrace();
 		}
 		return System.getProperty("user.dir") + "\\test-output\\screenShots\\"+fileName+".png";

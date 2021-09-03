@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import utilites.BaseClass;
+import utilites.DataClass;
 
 public class CheckAssert extends BaseClass {
 	WebDriver driver;
@@ -18,7 +19,8 @@ public class CheckAssert extends BaseClass {
 	public void launchBrowser() throws IOException {
 		driver = initilizeDriver();
 		
-		driver.get(getProperty("url"));
+		//driver.get(getProperty("url"));
+		driver.get(DataClass.url);
 		
 	}
 	@Test
