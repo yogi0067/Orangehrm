@@ -49,7 +49,7 @@ public class MainLoginTest extends BaseClass {
 	public void launchBrowser() throws IOException {
 		driver = initilizeDriver();
 		
-		driver.get(getProperty(DataClass.url));
+		driver.get(DataClass.url);
 		mlpo = new MainLoginPage(driver);
 		hppo= new HomePage(driver);
 		wait= new WebDriverWait(driver, 20);

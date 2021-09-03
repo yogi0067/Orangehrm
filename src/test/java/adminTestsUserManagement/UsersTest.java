@@ -16,6 +16,7 @@ import pageObjects.HomePage;
 import pageObjects.MainLoginPage;
 import pageObjects.Users;
 import utilites.BaseClass;
+import utilites.DataClass;
 
 public class UsersTest extends BaseClass{
 	
@@ -29,7 +30,7 @@ public class UsersTest extends BaseClass{
 	public void LoginTest() throws IOException
 	{
 		driver=initilizeDriver();
-		driver.get(getProperty("url"));
+		driver.get(DataClass.url);
 		mlpo= new MainLoginPage(driver);
 		hopo= new HomePage(driver);
 		upo= new Users(driver);
