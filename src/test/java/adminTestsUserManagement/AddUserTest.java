@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.AddUser;
@@ -17,7 +18,7 @@ import pageObjects.MainLoginPage;
 import pageObjects.Users;
 import utilites.BaseClass;
 import utilites.DataClass;
-
+@Listeners(utilites.ListenerClass.class)
 public class AddUserTest extends BaseClass {
 	WebDriver driver;
 	MainLoginPage mlpo;
@@ -25,6 +26,7 @@ public class AddUserTest extends BaseClass {
 	WebDriverWait wait;
 	Users upo;
 	AddUser aupo;
+	
 	@Test
 	public void LoginTest() throws IOException
 	{
@@ -47,7 +49,7 @@ public class AddUserTest extends BaseClass {
 		hopo.admin_menu().click();
 		upo.addButton().click();
 		aupo.systemUser_userType().selectByVisibleText("ESS");
-		aupo.systemUser_userName().sendKeys("TestUser123");
+		aupo.systemUser_userName().sendKeys("TestUser1");
 		aupo.systemUser_status().selectByVisibleText("Enabled");
 		aupo.systemUser_employeeName_empName().sendKeys("Paul");
 		Thread.sleep(3000);
