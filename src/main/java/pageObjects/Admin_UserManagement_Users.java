@@ -9,10 +9,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class Users {
+public class Admin_UserManagement_Users {
 	WebDriver driver;
 
-	public Users(WebDriver driver) {
+	public Admin_UserManagement_Users(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 

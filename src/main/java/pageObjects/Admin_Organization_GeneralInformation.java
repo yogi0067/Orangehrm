@@ -6,11 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class OrganizationGeneralInformation {
+public class Admin_Organization_GeneralInformation {
 	
 	
 	WebDriver driver;
-	public OrganizationGeneralInformation()
+	public Admin_Organization_GeneralInformation()
 	{
 		PageFactory.initElements(driver, this);
 	}
