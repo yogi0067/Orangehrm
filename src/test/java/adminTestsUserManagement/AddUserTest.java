@@ -12,10 +12,10 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import pageObjects.AddUser;
+import pageObjects.Admin_UserManagement_AddUser;
 import pageObjects.HomePage;
 import pageObjects.MainLoginPage;
-import pageObjects.Users;
+import pageObjects.Admin_UserManagement_Users;
 import utilites.BaseClass;
 import utilites.DataClass;
 @Listeners(utilites.ListenerClass.class)
@@ -24,8 +24,8 @@ public class AddUserTest extends BaseClass {
 	MainLoginPage mlpo;
 	HomePage hopo;
 	WebDriverWait wait;
-	Users upo;
-	AddUser aupo;
+	Admin_UserManagement_Users upo;
+	Admin_UserManagement_AddUser aupo;
 	
 	@Test
 	public void LoginTest() throws IOException
@@ -34,8 +34,8 @@ public class AddUserTest extends BaseClass {
 		driver.get(DataClass.url);
 		mlpo= new MainLoginPage(driver);
 		hopo= new HomePage(driver);
-		upo= new Users(driver);
-		aupo= new AddUser(driver);
+		upo= new Admin_UserManagement_Users(driver);
+		aupo= new Admin_UserManagement_AddUser(driver);
 		wait= new WebDriverWait(driver, 30);
 		mlpo.userName().sendKeys(getProperty("userName"));
 		mlpo.password().sendKeys(getProperty("password"));
