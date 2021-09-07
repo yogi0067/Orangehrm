@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
 import pageObjects.MainLoginPage;
-import pageObjects.OrganizationGeneralInformation;
+import pageObjects.Admin_Organization_GeneralInformation;
 import pageObjects.Admin_Organization_Tab;
 import utilites.BaseClass;
 import utilites.DataClass;
@@ -23,7 +23,7 @@ public class GeneralInformation extends BaseClass {
 	MainLoginPage mlpo;
 	HomePage hopo;
 	WebDriverWait wait;
-	OrganizationGeneralInformation ogipo;
+	Admin_Organization_GeneralInformation ogipo;
 	@BeforeTest
 	public void launchBrowser() throws IOException {
 		driver = initilizeDriver();		
@@ -32,7 +32,7 @@ public class GeneralInformation extends BaseClass {
 		hopo= new HomePage(driver);
 		wait= new WebDriverWait(driver, 20);
 		opo= new Admin_Organization_Tab(driver);
-		ogipo= new OrganizationGeneralInformation(driver);
+		ogipo= new Admin_Organization_GeneralInformation(driver);
 	}
 	
 	@Test

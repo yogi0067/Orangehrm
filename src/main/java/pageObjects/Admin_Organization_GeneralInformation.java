@@ -10,11 +10,8 @@ public class Admin_Organization_GeneralInformation {
 	
 	
 	WebDriver driver;
-<<<<<<< HEAD:src/main/java/pageObjects/OrganizationGeneralInformation.java
-	public OrganizationGeneralInformation(WebDriver driver)
-=======
-	public Admin_Organization_GeneralInformation()
->>>>>>> 9d8d2856e662e6f8efc4991b8b85379b0449df3f:src/main/java/pageObjects/Admin_Organization_GeneralInformation.java
+
+	public Admin_Organization_GeneralInformation(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
