@@ -30,7 +30,10 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		return driver;
 	}
-
+	
+	
+	
+	
 	public String getProperty(String value) throws IOException {
 		FileInputStream fis = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties");

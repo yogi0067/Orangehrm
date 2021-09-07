@@ -6,9 +6,10 @@
 	</listeners>
 
 
-	<test thread-count="5" name="Test">
+	<test thread-count="5" name="Jobs">
 		<classes>
 			<class name="loginTests.MainLoginTest" />
+			<class name="loginTests.CheckAssert" />		
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
