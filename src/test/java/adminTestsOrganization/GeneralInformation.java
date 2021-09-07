@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
 import pageObjects.MainLoginPage;
+import pageObjects.OrganizationGeneralInformation;
 import pageObjects.Admin_Organization_Tab;
 import utilites.BaseClass;
 import utilites.DataClass;
@@ -22,6 +23,7 @@ public class GeneralInformation extends BaseClass {
 	MainLoginPage mlpo;
 	HomePage hopo;
 	WebDriverWait wait;
+	OrganizationGeneralInformation ogipo;
 	@BeforeTest
 	public void launchBrowser() throws IOException {
 		driver = initilizeDriver();		
@@ -30,6 +32,7 @@ public class GeneralInformation extends BaseClass {
 		hopo= new HomePage(driver);
 		wait= new WebDriverWait(driver, 20);
 		opo= new Admin_Organization_Tab(driver);
+		ogipo= new OrganizationGeneralInformation(driver);
 	}
 	
 	@Test
@@ -43,6 +46,19 @@ public class GeneralInformation extends BaseClass {
 		opo.organization().click();
 		opo.organizationGeneralInformation().click();
 	}
+	@Test
+	public void Test2() throws InterruptedException
+	{
+		ogipo.organization_SaveButton().click();
+		ogipo.organization_city().clear();
+		ogipo.organization_city().sendKeys("Rampura Phul");
+		ogipo.organization_SaveButton().click();
+		Thread.sleep(4000);
+		System.out.println(ogipo.organization_city().getAttribute("value"));
+		
+		
+	}
+	
 	
 	
 	

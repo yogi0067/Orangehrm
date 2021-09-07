@@ -10,7 +10,7 @@ public class OrganizationGeneralInformation {
 	
 	
 	WebDriver driver;
-	public OrganizationGeneralInformation()
+	public OrganizationGeneralInformation(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
