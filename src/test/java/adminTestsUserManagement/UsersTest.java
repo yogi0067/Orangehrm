@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
 import pageObjects.MainLoginPage;
-import pageObjects.Users;
+import pageObjects.Admin_UserManagement_Users;
 import utilites.BaseClass;
 import utilites.DataClass;
 
@@ -25,7 +25,7 @@ public class UsersTest extends BaseClass{
 	MainLoginPage mlpo;
 	HomePage hopo;
 	WebDriverWait wait;
-	Users upo;
+	Admin_UserManagement_Users upo;
 	@Test
 	public void LoginTest() throws IOException
 	{
@@ -33,7 +33,7 @@ public class UsersTest extends BaseClass{
 		driver.get(DataClass.url);
 		mlpo= new MainLoginPage(driver);
 		hopo= new HomePage(driver);
-		upo= new Users(driver);
+		upo= new Admin_UserManagement_Users(driver);
 		wait= new WebDriverWait(driver, 30);
 		mlpo.userName().sendKeys(getProperty("userName"));
 		mlpo.password().sendKeys(getProperty("password"));
