@@ -11,7 +11,7 @@ import com.aventstack.extentreports.Status;
 
 public class ListenerClass extends BaseClass implements ITestListener{
 	ExtentReports er=htmlReport();
-	ExtentTest test;
+	public static ExtentTest test;
 	//WebDriver driver;
 	@Override
 	public void onTestStart(ITestResult result) {

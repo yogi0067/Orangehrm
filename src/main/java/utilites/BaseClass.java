@@ -20,7 +20,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
-	public WebDriver driver;
+	public  WebDriver driver;
 	Properties prop = new Properties();
 	public ExtentReports extent;
 	public static Logger logs = LogManager.getLogger(BaseClass.class.getName());
@@ -30,10 +30,6 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		return driver;
 	}
-	
-	
-	
-	
 	public String getProperty(String value) throws IOException {
 		FileInputStream fis = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties");

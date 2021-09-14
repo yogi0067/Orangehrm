@@ -12,9 +12,16 @@ public class HomePage {
 	public HomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
+		this.driver=driver;
 	}
+	
+	public Admin getAdmin() {
+		return new Admin(driver);
+	}
+	
+	
 	@FindBy(css = "#menu_admin_viewAdminModule")
-	WebElement admin_menu;
+	public WebElement admin_menu;
 	public WebElement admin_menu()
 	{
 		return admin_menu;
