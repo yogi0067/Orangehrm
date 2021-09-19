@@ -1,6 +1,10 @@
 package adminTestsJob;
 
-public class JobTitles {
+import utilites.CustomUtilites;
+
+public class JobTitles extends CustomUtilites {
+	
+	
 
 	
 }

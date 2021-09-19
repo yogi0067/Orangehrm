@@ -4,13 +4,10 @@
 	<listeners>
 		<listener class-name="utilites.ListenerClass" />
 	</listeners>
-
-
-
 	<test thread-count="5" name="TestLogin">
 		<classes>
 			<class name="loginTests.MainLoginTest" />
-			<class name="loginTests.CheckAssert" />		
+			<class name="loginTests.CheckAssert" />		<!-- How we can add whole as test -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -71,6 +71,9 @@ public class ExcelOperations {
 		excelfile.write(fos);
 		fos.close();		
 	}
+	
+	//AddNewColumn
+	//AddNewRow
 	public static void main(String[] args) throws IOException {
 		ExcelOperations obj= new ExcelOperations();
 		int row=obj.getRowCount(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\TestDataForForgotPassword.xlsx","Sheet1");

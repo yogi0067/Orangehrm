@@ -27,7 +27,7 @@ public class AddUserTest extends BaseClass {
 	Admin_UserManagement_Users upo;
 	Admin_UserManagement_AddUser aupo;
 	
-	@Test
+	@Test()
 	public void LoginTest() throws IOException
 	{
 		driver=initilizeDriver();
