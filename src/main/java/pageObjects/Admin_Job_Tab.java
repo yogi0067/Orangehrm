@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -62,6 +64,14 @@ public class Admin_Job_Tab {
 	public WebElement jobWorkShifts()
 	{
 		return jobWorkShifts;
+	}
+	
+	@FindBy(xpath = "//*[@id='menu_admin_Job'] /following-sibling::ul/li/a")
+	List<WebElement>  availableJobTabOptions;
+	public List<WebElement> availableJobTabOptions()
+	{
+		return availableJobTabOptions;
+		
 	}
 	
 	
