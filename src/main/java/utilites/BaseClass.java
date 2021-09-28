@@ -45,15 +45,13 @@ public class BaseClass {
 	
 	  // Changes Sagar has been making for improvement
 	  
-	  public void  initializeBrowser()  { 
+		public void initializeBrowser()  { 
 		  driver= initilizeDriver(); 
 		  driver.get(DataClass.url); 
 		  mlpo = new MainLoginPage(driver);
 		   
 		  }
-	  
-	  
-	  public WebDriver SuccessfullLogin () {
+		public WebDriver SuccessfullLogin () {
 	  mlpo.userName().sendKeys(DataClass.userName);
 	  mlpo.password().sendKeys(DataClass.password); 
 	  mlpo.loginButton().click();

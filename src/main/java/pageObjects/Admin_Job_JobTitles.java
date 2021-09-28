@@ -15,7 +15,7 @@ public class Admin_Job_JobTitles {
 	
 	
 	@FindBy(xpath = "//div[@class='head']")
-	WebElement JobTitlesText;
+	 WebElement JobTitlesText;
 	public WebElement JobTitlesText()
 	{
 		return JobTitlesText;
