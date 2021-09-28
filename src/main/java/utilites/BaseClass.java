@@ -51,12 +51,19 @@ public class BaseClass {
 		  mlpo = new MainLoginPage(driver);
 		   
 		  }
+
 		public WebDriver SuccessfullLogin () {
+
 	  mlpo.userName().sendKeys(DataClass.userName);
 	  mlpo.password().sendKeys(DataClass.password); 
 	  mlpo.loginButton().click();
 	  return driver;
 	  }
+	  
+	  public void closeBrowser() {
+		  driver.close();
+		  
+	  } 
 	 // Changes closed
 	public String getProperty(String value) throws IOException {
 		FileInputStream fis = new FileInputStream(
