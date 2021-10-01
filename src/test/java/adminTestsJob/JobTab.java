@@ -35,7 +35,7 @@ public class JobTab extends BaseClass {
 		        // Calling the initialize method of base class
 				initializeBrowser();
 				// Calling the login method of base class
-				driver=successfullLogin();
+				driver=SuccessfullLogin();
 				// Instantiating an instance of HomePage Object
 				hopo=new HomePage(driver);
 				// Instantiating an instance of AdminJobTab Object
@@ -64,7 +64,7 @@ public class JobTab extends BaseClass {
 		// Calling the initialize method of base class
 		initializeBrowser();
 		// Calling the login method of base class
-		driver=successfullLogin();
+		driver=SuccessfullLogin();
 		// Instantiating an instance of HomePage Object
 		hopo=new HomePage(driver);
 		// Instantiating an instance of AdminJobTab Object
