@@ -1,6 +1,9 @@
 package adminTestsJob;
 
 public class JobTitles {
+	public static void main(String[] args) {
+		
+	}
 
 	//Validate the URL -https://opensource-demo.orangehrmlive.com/index.php/admin/viewJobTitleList
 	//Validate the text in first row with Grey Background - Job Titles
